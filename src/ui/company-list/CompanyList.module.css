@@ -1,0 +1,11 @@
+.logoBox {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.logo {
+
+    width: 6rem;
+    object-fit: cover;
+}

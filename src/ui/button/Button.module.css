@@ -1,0 +1,17 @@
+.Button {
+    width: fit-content;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+
+    background-image: linear-gradient(to right, #a100f2, #6e49ec);
+    color: #fff;
+
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}

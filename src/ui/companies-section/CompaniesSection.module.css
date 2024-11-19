@@ -1,0 +1,25 @@
+.companiesSection {
+    padding: 3rem 2rem;
+    background-color: #f0f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.text {
+    color: #777;
+}
+
+@media(max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+}

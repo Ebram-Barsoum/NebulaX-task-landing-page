@@ -1,0 +1,30 @@
+.buttonLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding: .5rem .3rem .5rem 2rem;
+    width: fit-content;
+    color: #fff;
+    background-image: linear-gradient(to right, #a100f2, #6e49ec);
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttonLink>svg {
+    width: 2rem;
+    height: 2rem;
+    padding: .2rem;
+    background-color: #fff;
+    fill: #6e49ec;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

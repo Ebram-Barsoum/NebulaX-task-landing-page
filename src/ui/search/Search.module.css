@@ -1,0 +1,72 @@
+.form {
+    position: relative;
+    justify-self: end;
+    width: 60%;
+
+}
+
+.input {
+    padding: 1.4rem;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.input:focus {
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.input::placeholder {
+    color: #ccc;
+}
+
+.btn {
+    position: absolute;
+    right: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+
+    border: none;
+    background-color: #6e49ec;
+    color: #fff;
+
+    height: 2.5rem;
+    width: 2.5rem;
+
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+
+    display: grid;
+    place-content: center;
+
+    cursor: pointer;
+}
+
+.btn>svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media(max-width:992px) {
+    .form {
+        width: 100%;
+    }
+}

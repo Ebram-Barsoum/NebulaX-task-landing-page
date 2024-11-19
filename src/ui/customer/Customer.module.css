@@ -1,0 +1,153 @@
+.Customer {
+    background-color: #fff;
+    padding: 1rem;
+
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    position: relative;
+}
+
+.Customer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+
+    width: 50%;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    z-index: -1;
+}
+
+
+.Customer:first-child::after {
+    left: -25%;
+
+    background-color: #4362eeac;
+}
+
+.Customer:nth-child(2)::after {
+    right: -25%;
+    background-color: #25a18e;
+}
+
+.Customer:nth-child(2)>* {
+    direction: ltr;
+}
+
+.Customer:first-child {
+    align-self: flex-start;
+}
+
+.Customer:nth-child(2) {
+    direction: rtl;
+    align-self: center;
+}
+
+
+
+.imgBox {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+
+.imgBox::after,
+.imgBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    z-index: 0;
+}
+
+.imgBox::before {
+    background-color: #ccdbfd9d;
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+
+.imgBox::after {
+    background-color: transparent;
+    transform: scale(1.05) rotate(-30deg);
+    -webkit-transform: scale(1.05) rotate(-30deg);
+    -moz-transform: scale(1.05) rotate(-30deg);
+    -ms-transform: scale(1.05) rotate(-30deg);
+    -o-transform: scale(1.05) rotate(-30deg);
+    border: 2px solid;
+    border-color: transparent blueviolet blueviolet transparent;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    object-fit: cover;
+
+    position: relative;
+    z-index: 10;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.infoBox>h3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.infoBox>h3>svg {
+    color: blueviolet;
+}
+
+.infoBox>p {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.infoBox>p>span:first-child {
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+.infoBox>p>span:nth-child(2) {
+    color: green;
+    font-weight: 600;
+}
